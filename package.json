@@ -7,8 +7,6 @@
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
-    "story-start": "./scripts/story-start.sh",
-    "story-complete": "./scripts/story-complete.sh",
     "clean": "rm -rf dist server.js",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -28,7 +26,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
