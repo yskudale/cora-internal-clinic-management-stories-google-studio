@@ -10,7 +10,9 @@
     "clean": "rm -rf dist server.js",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "story:start": "./scripts/story-start.sh",
+    "story:complete": "./scripts/story-complete.sh"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
