@@ -1,0 +1,6 @@
+{
+  "name": "Cora Internal Clinic Management",
+  "description": "An internal management system for clinical operations, patient registration, and administrative configurations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
