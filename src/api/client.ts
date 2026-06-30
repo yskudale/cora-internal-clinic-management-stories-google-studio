@@ -4,11 +4,11 @@ import { QueryClient } from '@tanstack/react-query';
 const baseApiUrl = (import.meta.env.VITE_API_BASE_URL as string) || '/api';
 
 export const apiClient = ky.create({
-  prefixUrl: baseApiUrl,
+  prefix: baseApiUrl,
   credentials: 'include',
   hooks: {
     afterResponse: [
-      async (request, _options, response) => {
+      async ({ request, response }) => {
         if (response.status === 401) {
           try {
             const url = new URL(request.url);
